@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_product_deal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nike_product1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_store_deal"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_user_amin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055" />
+
+        <TextView
+            android:id="@+id/tv_namestore_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="#7de1e1e1"
+            android:gravity="left"
+            android:text="NIKE STORE"
+            android:textColor="#3d3d3d"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_store_deal"
+            app:layout_constraintStart_toEndOf="@+id/iv_store_deal"
+            app:layout_constraintTop_toTopOf="@+id/iv_store_deal" />
+
+        <TextView
+            android:id="@+id/tv_title_deal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#7bffffff"
+            android:gravity="center"
+            android:text="Sale 50% all item"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_bigsale"
+            android:layout_width="35dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/big_sale_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/iv_product_deal"
+            app:layout_constraintStart_toStartOf="@+id/iv_product_deal"
+            app:layout_constraintTop_toBottomOf="@+id/iv_product_deal"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_date_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Start: 20/10/2018 08:24"
+                    android:textColor="#533131"
+                    android:textSize="8sp" />
+                <Button
+                    android:id="@+id/btn_seedeal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/rectangle"
+                    android:text="SEE DEAL"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#e7e7e7"
+                    android:textSize="8sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_percent_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_expired"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="-30%"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_stroke"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/tv_percent_deal"
+            app:layout_constraintStart_toStartOf="@+id/tv_percent_deal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_percent_deal">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="25dp"
+                android:layout_height="10dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="Quantity"
+                android:textColor="#934949"
+                android:textSize="5sp"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="#ae4848"
+                android:textSize="10sp"
+
+                />
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

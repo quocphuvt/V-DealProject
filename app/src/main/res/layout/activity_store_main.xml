@@ -1,0 +1,124 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/htab_maincontent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreMainActivity"
+    android:fitsSystemWindows="true">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/htab_appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/htab_collapse_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                    app:titleEnabled="false">
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/htab_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:orientation="vertical"
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="0.75"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_background_store"
+                            android:src="@drawable/map_bg"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/view_user_store_detail"
+                            android:layout_width="55dp"
+                            android:layout_height="58dp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="30dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/ic_user_amin"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.346" />
+
+                        <TextView
+                            android:id="@+id/tv_username_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="Username"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view_user_store_detail" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="48dp"
+                        app:layout_collapseMode="pin"
+                        app:titleTextColor="#88e0cd"
+                        app:subtitleTextColor="#88e0cd"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.3"
+                        android:background="@android:color/black"
+                        android:fitsSystemWindows="true" />
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/htab_tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        app:tabIndicatorColor="@android:color/white"
+                        app:tabSelectedTextColor="@android:color/white"
+                        app:tabTextColor="#88e0cd" />
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/htab_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="50dp"
+        android:background="#f557"
+        android:src="@drawable/logo_deal"
+        app:backgroundTint="#50718b" />
+    <include layout="@layout/fab_layout" />
+
+        </android.support.design.widget.CoordinatorLayout>

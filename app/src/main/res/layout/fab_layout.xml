@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_newpost"
+        android:layout_width="match_parent"
+        app:fabSize="mini"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="80dp"
+        app:backgroundTint="#76d296"
+        android:visibility="invisible"
+        android:src="@drawable/ic_edit"
+
+
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_storedetail"
+        app:fabSize="mini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="#e7b783"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible"
+        android:src="@drawable/icon_store"
+       />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_checkdeal"
+        app:fabSize="mini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#c79582"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="57dp"
+        android:layout_marginRight="55dp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_menu"
+         />
+</FrameLayout>

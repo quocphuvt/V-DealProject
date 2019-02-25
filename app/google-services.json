@@ -1,0 +1,131 @@
+{
+  "project_info": {
+    "project_number": "586022622495",
+    "firebase_url": "https://get-deals-pro.firebaseio.com",
+    "project_id": "get-deals-pro",
+    "storage_bucket": "get-deals-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586022622495:android:22c2caab1c036c99",
+        "android_client_info": {
+          "package_name": "com.example.quocphu.getdealsapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586022622495-67kg2hc7h670uonhn0ro09e4vrku5gj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quocphu.getdealsapplication",
+            "certificate_hash": "1c7fe71e7c95bff7c49c51f782eb3758a0cce95f"
+          }
+        },
+        {
+          "client_id": "586022622495-igo8o5s8ua8c9odldhhii94ve1jo7ehk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quocphu.getdealsapplication",
+            "certificate_hash": "9c930334cd597a04c65ec41dbfca37a66a6a7670"
+          }
+        },
+        {
+          "client_id": "586022622495-a828uncjds0vbp96vffumfi0lh4q09lu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quocphu.getdealsapplication",
+            "certificate_hash": "e73e1e762f852201eba4ee9b8cd3fd3985a79d8b"
+          }
+        },
+        {
+          "client_id": "586022622495-8anhoccudqt193103vdsbsd9a4vglon2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quocphu.getdealsapplication",
+            "certificate_hash": "c48ad0d17b942340a365dee8c70357a6e35c083a"
+          }
+        },
+        {
+          "client_id": "586022622495-08m376d4pf9gcj1khc2mavtqu5f60e4d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quocphu.getdealsapplication",
+            "certificate_hash": "b677c72aa504a38cb1adc61d3f019644a9c6d078"
+          }
+        },
+        {
+          "client_id": "586022622495-ssucabud97ne0u2t1vctga7p573gu6vm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUn10uSbHgYEGcJRNjqS8kJ6UIW23amlA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586022622495-ic21l8kl6ogsu6fat13b3mhspedb5h34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586022622495:android:8e818851304307c7",
+        "android_client_info": {
+          "package_name": "com.example.quocphu.runfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586022622495-9nud3djo25jg11ocbg559gepedkpiocc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quocphu.runfirebase",
+            "certificate_hash": "1c7fe71e7c95bff7c49c51f782eb3758a0cce95f"
+          }
+        },
+        {
+          "client_id": "586022622495-ssucabud97ne0u2t1vctga7p573gu6vm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUn10uSbHgYEGcJRNjqS8kJ6UIW23amlA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586022622495-ic21l8kl6ogsu6fat13b3mhspedb5h34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

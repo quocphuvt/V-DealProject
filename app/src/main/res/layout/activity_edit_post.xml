@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".EditPostActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_neweditpost"
+        android:layout_width="match_parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+    <EditText
+        android:id="@+id/et_title_editpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your title..."
+        android:textColorHint="#FF4E4E4E"
+        android:textColor="#FF4E4E4E"
+        android:textSize="15sp"
+        
+        android:background="@drawable/edittext_bg"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/et_content_editpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Your content..."
+        android:textColorHint="#FF4E4E4E"
+        android:textColor="#FF4E4E4E"
+        android:gravity="top|left"
+        android:textSize="15sp"
+        android:background="@drawable/edittext_bg"
+        android:lines="4"
+        android:ems="10"
+        android:inputType="textMultiLine"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Date start:"
+        android:textSize="15sp"
+        android:textColor="#FF4E4E4E"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_datestart_editpost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:background="@drawable/edittext_bg"/>
+        <Button
+            android:id="@+id/btn_pickday_start_edit"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="41dp"
+            android:background="#60b797"
+            android:textColor="#fff"
+            android:text="Date"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date End:"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#FF4E4E4E"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_dateend_editpost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:background="@drawable/edittext_bg"/>
+        <Button
+            android:id="@+id/btn_pickday_end_edit"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="41dp"
+            android:background="#e7a5a5"
+            android:textColor="#fff"
+            android:text="Date"
+            />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/et_quantity_editpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#FF4E4E4E"
+        android:layout_marginTop="5dp"
+        android:hint="Quantity..."
+        android:textColorHint="#FF4E4E4E"
+        android:background="@drawable/edittext_bg"
+        android:ems="10" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Type editpost"
+        android:textSize="15sp"
+        android:textColor="#FF4E4E4E"
+        />
+    <Spinner
+        android:id="@+id/sp_type_editpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select image to update "
+            android:textColor="#646464" />
+    <ImageView
+        android:id="@+id/iv_photo_post_edit"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/photo_post"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+        <TextView
+            android:id="@+id/tv_codedeal"
+            android:background="@drawable/rounded_search"
+            android:layout_marginTop="10dp"
+            android:hint="Input your code here..."
+            android:textColor="#646464"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="46dp" />
+    <Button
+        android:id="@+id/btn_editpost"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#60b797"
+        android:text="EDIT POST"
+        android:textColor="#f4f4f4"/>
+        <Button
+            android:id="@+id/btn_cancle_edit"
+            android:text="Cancle"
+            android:background="@android:color/transparent"
+            android:textColor="#874747"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

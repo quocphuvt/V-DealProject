@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".AddStoreActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_addstore"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        app:titleTextColor="#88e0cd"
+        app:subtitleTextColor="#88e0cd"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5ea4ae">
+        <ImageView
+            android:id="@+id/iv_cover_store"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_choose_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/fui_transparent"
+            android:drawableLeft="@drawable/ic_edit"
+            android:text="Choose cover"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/view_store_add"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/view_store_add"
+            android:layout_width="131dp"
+            android:layout_height="146dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_user_amin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_choosefile"
+            android:layout_width="39dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/button_edit"
+            app:layout_constraintBottom_toBottomOf="@+id/view_store_add"
+            app:layout_constraintEnd_toEndOf="@+id/view_store_add"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/view_store_add"
+            app:layout_constraintTop_toTopOf="@+id/view_store_add"
+            app:layout_constraintVertical_bias="0.923" />
+    </android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/et_namestore_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15sp"
+        android:inputType="textPersonName"
+        android:hint="Name's store..." />
+
+    <EditText
+        android:id="@+id/et_description_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15sp"
+        android:hint="Description's store..."
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:lines="3" />
+
+    <EditText
+        android:id="@+id/et_address_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15sp"
+        android:inputType="textPersonName"
+        android:hint="Address..." />
+
+    <EditText
+        android:id="@+id/et_location_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15sp"
+        android:inputType="textPersonName"
+        android:hint="Location..." />
+
+    <EditText
+        android:id="@+id/et_phone_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15sp"
+        android:inputType="textPersonName"
+        android:hint="Phone number..." />
+    <Button
+        android:id="@+id/btn_store_add"
+        android:text="ADD STORE"
+        android:background="#78c79a"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_cancle_add"
+        android:text="CANCLE"
+        android:background="@android:color/transparent"
+        android:textColor="#b75a5a"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</ScrollView>

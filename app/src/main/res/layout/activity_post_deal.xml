@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".PostDealActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_newpost"
+        android:layout_width="match_parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+    <EditText
+        android:id="@+id/et_title_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your title..."
+        android:textColorHint="#646464"
+        android:textColor="#646464"
+        android:textSize="15sp"
+        android:background="@drawable/edittext_bg"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/et_content_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Your content..."
+        android:textColorHint="#646464"
+        android:textColor="#646464"
+        android:gravity="top|left"
+        android:textSize="15sp"
+        android:background="@drawable/edittext_bg"
+        android:lines="4"
+        android:ems="10"
+        android:inputType="textMultiLine"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Date start:"
+        android:textSize="15sp"
+        android:textColor="#646464"
+       />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_datestart_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="#646464"
+            android:background="@drawable/edittext_bg"/>
+        <Button
+            android:id="@+id/btn_pickday_start"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="41dp"
+            android:background="#60b797"
+            android:textColor="#fff"
+            android:text="Date"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date End:"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#646464"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_dateend_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="#646464"
+            android:background="@drawable/edittext_bg"/>
+        <Button
+            android:id="@+id/btn_pickday_end"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="41dp"
+            android:background="#e7a5a5"
+            android:textColor="#fff"
+            android:text="Date"
+            />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/et_quantity_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#646464"
+        android:layout_marginTop="5dp"
+        android:hint="Quantity..."
+        android:textColorHint="#646464"
+        android:background="@drawable/edittext_bg"
+        android:ems="10" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Type post"
+        android:textSize="15sp"
+        android:textColor="#646464"
+        />
+    <Spinner
+        android:id="@+id/sp_type_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_percent"
+                android:background="@drawable/rounded_search"
+                android:hint="Percent Sale 0-100"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_height="46dp" />
+            <TextView
+                android:text="%"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+           android:text="Post's photo"
+           android:textColor="#646464"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_photo_post"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/photo_post"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+    <EditText
+        android:id="@+id/et_codedeal"
+        android:background="@drawable/rounded_search"
+        android:layout_marginTop="10dp"
+        android:hint="Input your code here..."
+        android:textColor="#646464"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="46dp" />
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#60b797"
+        android:text="POST"
+        android:textColor="#f4f4f4"/>
+        <Button
+            android:id="@+id/btn_cancle_post"
+            android:text="Cancle"
+            android:background="@android:color/transparent"
+            android:textColor="#874747"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

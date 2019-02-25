@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapFragment">
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp" />
+    <android.support.v7.widget.SearchView
+        android:id="@+id/sv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.SearchView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_store_sheet"
+            android:layout_width="86dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/store_detail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_namestore_sheet" />
+
+
+        <TextView
+            android:id="@+id/tv_namestore_sheet"
+            android:layout_width="match_parent"
+            android:background="@drawable/edittext_bg"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Store: "
+            android:textColor="#365874"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_address_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="10dp"
+            android:background="#Fff"
+            android:lines="2"
+            android:textColor="#31686e"
+            android:text="Address:"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_store_sheet"
+            app:layout_constraintTop_toBottomOf="@+id/tv_namestore_sheet" />
+
+        <TextView
+            android:id="@+id/tv_location_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Location:"
+            android:textSize="10dp"
+            android:textColor="#31686e"
+            android:layout_marginStart="112dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_address_sheet"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_address_sheet"
+            app:layout_constraintTop_toBottomOf="@+id/tv_address_sheet" />
+
+        <TextView
+            android:id="@+id/tv_phone_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginTop="4dp"
+            android:text="Phonenumber:"
+            android:textSize="10dp"
+            android:textColor="#31686e"
+            app:layout_constraintEnd_toEndOf="@+id/tv_location_sheet"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginStart="112dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_location_sheet"
+            app:layout_constraintTop_toBottomOf="@+id/tv_location_sheet" />
+
+        <TextView
+            android:id="@+id/tv_discription_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textSize="10dp"
+            android:lines="3"
+            android:textColor="#31686e"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="112dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_phone_sheet"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_phone_sheet"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phone_sheet" />
+
+
+        <Button
+            android:id="@+id/btn_goto_sheet"
+            android:layout_width="46dp"
+            android:layout_height="22dp"
+            android:background="@color/fui_transparent"
+            android:drawableLeft="@drawable/ic_see"
+            android:text="VISIT"
+            android:textColor="#747474"
+            android:textSize="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_collapse"
+            app:layout_constraintEnd_toEndOf="@+id/iv_store_sheet"
+            app:layout_constraintStart_toStartOf="@+id/iv_store_sheet"
+            app:layout_constraintTop_toTopOf="@+id/btn_collapse" />
+
+        <Button
+            android:id="@+id/btn_collapse"
+            android:layout_width="73dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_arrowcollapse"
+            android:text="hide info"
+            android:textColor="#894646"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_discription_sheet" />
+
+        <Button
+            android:id="@+id/iv_farovate_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_favourate"
+            android:text="add favourite"
+            android:textColor="#c67a7a"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_collapse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/btn_collapse"
+            app:layout_constraintTop_toTopOf="@+id/btn_collapse" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+</android.support.design.widget.CoordinatorLayout>
